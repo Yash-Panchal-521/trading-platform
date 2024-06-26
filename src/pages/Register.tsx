@@ -1,11 +1,11 @@
 import React from "react";
-import TopNavBar from "../components/TopNavBar";
-
+import TopNavBar from "../container/TopNavBar";
+import RegisterPage from "../container/RegisterPage";
 const Register = () => {
   return (
     <div>
       <TopNavBar />
-      
+      <RegisterPage />
     </div>
   );
 };

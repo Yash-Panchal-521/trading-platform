@@ -8,7 +8,6 @@ const TopNavBar = () => {
         <div className="flex justify-between">
           <div className="flex space-x-7">
             <div>
-              {/* Website Logo */}
               <Link to="/" className="flex items-center py-4 px-2">
                 <span className="font-semibold text-gray-500 text-lg ">
                   Trading Application
@@ -16,16 +15,16 @@ const TopNavBar = () => {
               </Link>
             </div>
           </div>
-          <div className="hidden md:flex items-center space-x-3 ">
+          <div className="flex items-center space-x-3 ">
             <Link
               to="/register"
-              className="py-4 px-2 text-gray-500 font-semibold hover:text-purple-400 transition duration-300"
+              className="py-4 px-4 basis-1/2 text-gray-500 font-semibold hover:bg-purple-600  hover:text-white transition duration-300 rounded-xl"
             >
               Register
             </Link>
             <Link
               to="/login"
-              className="py-4 px-2 text-gray-500 font-semibold hover:text-purple-500 transition duration-300"
+              className="py-4 px-4 basis-1/2 text-gray-500 font-semibold hover:bg-purple-600  hover:text-white transition duration-300 rounded-xl"
             >
               Login
             </Link>
