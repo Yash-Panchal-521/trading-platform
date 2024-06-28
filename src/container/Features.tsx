@@ -35,7 +35,7 @@ const features = [
 ];
 
 const Features = () => (
-  <div className="flex flex-col h-[100vh] items-center justify-center">
+  <div className="flex flex-col h-[100vh] items-center justify-center py-8 ">
     <Typography
       variant="h4"
       component="h2"

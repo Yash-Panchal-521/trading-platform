@@ -1,6 +1,6 @@
 // components/Testimonials.js
 import React from "react";
-import { Container, Grid, Typography, Box } from "@mui/material";
+import { Grid, Typography, Box } from "@mui/material";
 
 const testimonials = [
   {
@@ -30,7 +30,7 @@ const testimonials = [
 ];
 
 const Testimonials = () => (
-  <div className="flex flex-col h-[100vh] justify-center content-center px-[25%]">
+  <div className="flex flex-col h-[100vh] justify-center content-center px-[25%] py-8">
     <Typography variant="h4" component="h2" gutterBottom textAlign="center">
       What Our Users Say
     </Typography>

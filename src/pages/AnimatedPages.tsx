@@ -14,7 +14,7 @@ const AnimatedPages = ({ children }) => {
       initial="initial"
       animate="animate"
       exit="exit"
-      transition={{ duration: 0.5, ease: "linear" }}
+      transition={{ duration: 0.5, ease: "easeIn" }}
     >
       {children}
     </motion.div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const TopNavBar = () => {
   return (
@@ -8,26 +8,39 @@ const TopNavBar = () => {
         <div className="flex justify-between">
           <div className="flex space-x-7">
             <div>
-              <Link to="/" className="flex items-center py-4 px-2">
-                <span className="font-semibold text-gray-500 text-lg ">
-                  Trading Application
-                </span>
-              </Link>
+              <NavLink
+                to="/"
+                className={({ isActive }) => {
+                  return `flex items-center py-4 px-2 return font-semibold ${
+                    isActive ? "text-purple-600" : "text-gray-500"
+                  } text-xl transition duration-300 hover:text-purple-600`;
+                }}
+              >
+                Trading Application
+              </NavLink>
             </div>
           </div>
           <div className="flex items-center space-x-3 ">
-            <Link
+            <NavLink
               to="/register"
-              className="py-4 px-4 basis-1/2 text-gray-500 font-semibold hover:bg-purple-600  hover:text-white transition duration-300 rounded-xl"
+              className={({ isActive }) => {
+                return `py-2 px-4 basis-1/2 text-gray-500 font-semibold hover:bg-purple-600  hover:text-white transition duration-300 rounded-xl ${
+                  isActive ? "bg-purple-600 text-white" : ""
+                }`;
+              }}
             >
               Register
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/login"
-              className="py-4 px-4 basis-1/2 text-gray-500 font-semibold hover:bg-purple-600  hover:text-white transition duration-300 rounded-xl"
+              className={({ isActive }) => {
+                return `py-2 px-4 basis-1/2 text-gray-500 font-semibold hover:bg-purple-600  hover:text-white transition duration-300 rounded-xl ${
+                  isActive ? "bg-purple-600 text-white" : ""
+                }`;
+              }}
             >
               Login
-            </Link>
+            </NavLink>
           </div>
         </div>
       </div>
